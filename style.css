@@ -119,8 +119,8 @@ h1 {
 .tam-infos .move-button {
     width: 75%;
     height: 20%;
-    background-color: lightslategray;
-    font-size: 3rem;
+    background: none;
+    font-size: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,4 +191,16 @@ h1 {
     font-size: 2rem;
     border-radius: 5px;
     color: black;
+}
+
+@media (max-width: 470px) {
+    /* Votre style pour les écrans de taille mobile */
+    .tam-container {
+        width: 98%; /* Exemple de modification de la largeur */
+        height: 88%;
+    }
+
+    .tam-infos .move-button {
+        font-size: 2.5rem;
+    }
 }
