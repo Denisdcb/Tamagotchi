@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tamagotchi</title>
+</head>
+<body>
+    <h1>DonkeyGotchi</h1>
+    <div class="tam-container">
+        <div class="screen">
+            <h1 id="screen-logo"></h1>
+            <h2 id="screen-message"></h2>
+        </div>
+        <div class="infos">
+            <form id="tam-form">
+                <input type="text" id="name" placeholder="Tamagotchi Name">
+                <button type="submit" id="submit-button">START</button>
+            </form>
+            <div class="tam-infos" id="tam-infos">
+                <div class="left">
+                    <button class="move-button" id="food">&#x1F352</button>
+                </div>
+                <div class="tam-status">
+                    <div class="tam-name">
+                        <h2 id="tam-name">Name :</h2>
+                    </div>
+                    <div class="tam-life">
+                        <h2 id="tam-life">Life : 100</h2>
+                        <div class="tam-life-status"><div class="tam-life-current" id="tam-life-current"></div></div>
+                    </div>
+                    <div class="tam-energy">
+                        <h2 id="tam-energy">Energy : 100</h2>
+                        <div class="tam-energy-status"><div class="tam-energy-current" id="tam-energy-current"></div></div>
+                    </div>
+                    <div class="tam-age">
+                        <h2 id="tam-age">Age : 0</h2>
+                    </div>
+                </div>
+                <div class="right">
+                    <button class="move-button" id="sleep">&#x1F4A4</button>
+                </div>
+            </div>
+            <div class="restart" id="restart">
+                <a href="index.html">TRY AGAIN</a>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

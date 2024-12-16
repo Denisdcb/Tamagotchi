@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: cadetblue;
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+    margin-bottom: 3%;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.tam-container {
+    width: 50%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #905a07;
+    border-radius: 5px;
+}
+
+.screen {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60%;
+    background-color: black;
+    border: solid 15px #905a07;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.screen h1 {
+    font-size: 8rem;
+}
+
+.screen h2 {
+    font-size: 2rem;
+}
+
+.infos {
+    box-sizing: border-box;
+    border-top: solid 5px black;
+    width: 100%;
+    height: 40%;
+    background-color: #905a07;
+    border-radius: 5px;
+}
+
+.infos form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.infos input {
+    width: 50%;
+    height: 15%;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos form button {
+    width: 50%;
+    height: 15%;
+    border-radius: 5px;
+    border: none;
+    font-size: 2rem;
+    background-color: red;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tam-infos {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.left, .right {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tam-infos .move-button {
+    width: 75%;
+    height: 20%;
+    background: none;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.tam-infos .tam-status {
+    box-sizing: border-box;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tam-life, .tam-energy {
+    width: 100%;
+    height: 25%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tam-life .tam-life-status, .tam-energy .tam-energy-status {
+    width: 90%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.tam-life .tam-life-current {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.tam-energy .tam-energy-current {
+    width: 100%;
+    height: 100%;
+    background-color: yellowgreen;
+    border-radius: 5px;
+}
+
+.restart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.restart a {
+    width: 50%;
+    height: 15%;
+    background-color: chocolate;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 5px;
+    color: black;
+}
+
+@media (max-width: 470px) {
+    /* Votre style pour les écrans de taille mobile */
+    .tam-container {
+        width: 98%; /* Exemple de modification de la largeur */
+        height: 88%;
+    }
+
+    .tam-infos .move-button {
+        font-size: 2.5rem;
+    }
+}
